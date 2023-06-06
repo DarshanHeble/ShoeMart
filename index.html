@@ -10,8 +10,8 @@
   <title>Document</title>
 </head>
 
-<body>
-  <header class="text-gray-400 bg-gray-900 body-font">
+<body class="bg-zinc-900">
+  <header class="pl-4 pr-4 w-full text-gray-400 bg-zinc-900/75 body-font fixed z-10">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
         <span class="ml-3 text-2xl">Shoe Mart</span>
@@ -23,7 +23,7 @@
         <a href="#" class="mr-5 hover:text-white">About</a>
         <a href="#" class="mr-5 hover:text-white">Contact</a>
       </nav>
-      <div class="bag text-2xl cursor-pointer">
+      <div class="bag text-2xl cursor-pointer hover:text-white">
         <i class="fa-solid fa-bag-shopping"></i>
       </div>
       </button>
@@ -32,7 +32,7 @@
 
   <!-- =============================================================================================== -->
 
-  <section id="Home" class="text-gray-400 bg-gray-900 body-font">
+  <section id="Home" class="p-4 pt-24 text-gray-400 bg-zinc-900 body-font">
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
       <div
         class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -65,188 +65,512 @@
   </section>
   <!-- =============================================================================================== -->
 
-  <section class="text-gray-400 bg-gray-900 body-font">
-    <h1 id="Products" class="text-center text-3xl">Products</h1>
-    <div class="container px-5 py-24 mx-auto">
-      <!-- mens shoes  -->
-      <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/shoe11.jpg" />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              MEN SHOES
-            </h3>
-            <h2 class="text-white title-font text-lg font-medium">
-              Men's Nexon-03 Sports Running,Walking,Gym Shoes with Max..
+  <section id="products" class="p-4 pt-24 text-gray-400 bg-zinc-900 body-font">
+    <div class="container ">
+      <h1 id="Products" class="text-center text-3xl">Products</h1>
+      <div class="container px-5 py-24 mx-auto">
+        <!-- Sneakers Shoes  -->
+        <div class="flex flex-col">
+          <div class="flex justify-between mb-5">
+            <h2 class="hover:text-white">Sneakers</h2>
+            <a href="#" class="hover:text-white">View More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="images/shoe11.jpg" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  MEN SHOES
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  Men's Nexon-03 Sports Running,Walking,Gym Shoes with Max..
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">₹699</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="images/shoe22.jpg" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  MENS SHOES
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  Men's Newton-01 Sports Running Shoes Latest Stylish Casual </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">₹635</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/422x262" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/423x263" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  The 400 Blows
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$18.40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boots Shoes  -->
+        <div class="flex flex-col mt-7">
+          <div class="flex justify-between mb-5">
+            <h2 class="hover:text-white"> <!-- Boots Shoes  -->
             </h2>
-            <p><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p class="mt-1">₹699</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-              src="images/shoe22.jpg" />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              MENS SHOES
-            </h3>
-            <h2 class="text-white title-font text-lg font-medium">
-              Men's Newton-01 Sports Running Shoes Latest Stylish Casual            </h2>
-            <p><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p class="mt-1">₹635</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-              src="https://dummyimage.com/422x262" />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
-            <p><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p class="mt-1">$12.00</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-              src="https://dummyimage.com/423x263" />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-white title-font text-lg font-medium">
-              The 400 Blows
             </h2>
-            <p><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p class="mt-1">$18.40</p>
+            <a href="#" class="hover:text-white">View More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/424x264" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  The Catalyzer
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$16.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/425x265" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  Shooting Stars
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$21.15</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/427x267" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/428x268" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  The 400 Blows
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$18.40</p>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Sandals Shoes  -->
+        <div class="flex flex-col mt-7">
+          <div class="flex justify-between mb-5">
+            <h2 class="hover:text-white">Sandals</h2>
+            <a href="#" class="hover:text-white">View More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/424x264" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  The Catalyzer
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$16.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/425x265" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  Shooting Stars
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$21.15</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/427x267" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/428x268" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  The 400 Blows
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$18.40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Heels Shoes  -->
+        <div class="flex flex-col mt-7">
+          <div class="flex justify-between mb-5">
+            <h2 class="hover:text-white">Heels</h2>
+            <a href="#" class="hover:text-white">View More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/424x264" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  The Catalyzer
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$16.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/425x265" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  Shooting Stars
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$21.15</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/427x267" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$12.00</p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce"
+                  class="object-cover object-center w-full h-full block hover:border-8 transition-all  hover:border-red-500"
+                  src="https://dummyimage.com/428x268" />
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                  CATEGORY
+                </h3>
+                <h2 class="text-white title-font text-lg font-medium">
+                  The 400 Blows
+                </h2>
+                <p><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <p class="mt-1">$18.40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <!-- womens shoes  -->
-      <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-              src="https://dummyimage.com/424x264" />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-white title-font text-lg font-medium">
-              The Catalyzer
-            </h2>
-            <p><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p class="mt-1">$16.00</p>
-          </div>
+    </div>
+
+  </section>
+  <!-- =============================================================================================== -->
+  <!-- footer  -->
+
+  <footer class="text-gray-400 bg-zinc-900 body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex justify-between md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <!-- logo  -->
+          <h2 class="ml-3 text-xl">Shoe Mart</h2>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">Get our latest high quality and less prize shoes here</p>
+      </div>
+      <div class="flex-grow flex flex-wrap  md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <!-- <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
+        </div> -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Useful Links</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-white">Home</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Products</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Features</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">About</a>
+            </li>
+          </nav>
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-              src="https://dummyimage.com/425x265" />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-white title-font text-lg font-medium">
-              Shooting Stars
-            </h2>
-            <p><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p class="mt-1">$21.15</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-              src="https://dummyimage.com/427x267" />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-white title-font text-lg font-medium">Neptune</h2>
-            <p><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p class="mt-1">$12.00</p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-              src="https://dummyimage.com/428x268" />
-          </a>
-          <div class="mt-4">
-            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-              CATEGORY
-            </h3>
-            <h2 class="text-white title-font text-lg font-medium">
-              The 400 Blows
-            </h2>
-            <p><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </p>
-            <p class="mt-1">$18.40</p>
+
+
+        <!-- download  -->
+        <div class="flex flex-col space-y-4">
+          <h2>Download Our App</h2>
+          <p>Download App For Andriod and IOS Mobile Phones</p>
+          <div class="flex space-x-3">
+            <!-- Andriod  -->
+            <div class="flex justify-evenly items-center bg-white rounded w-40">
+              <i class="fa-brands fa-google-play text-4xl text-black"></i>
+              <div class=" flex flex-col justify-center">
+                <p class="text-black">Get It On</p>
+                <h1 class=" text-xl text-black font-bold">Google Play</h1>
+              </div>
+            </div>
+
+            <!-- Apple  -->
+            <div class="flex justify-evenly items-center bg-white rounded w-40">
+              <i class="fa-brands fa-apple text-4xl text-black"></i>
+              <div class=" flex flex-col justify-center">
+                <p class="text-black">Get It On</p>
+                <h1 class=" text-xl text-black font-bold">Google Play</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- =============================================================================================== -->
+    <div class="bg-zinc-800 bg-opacity-75">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-400 text-sm text-center sm:text-left"><i class="fa-regular fa-copyright"></i> 2023 Shoe Mart
+          —
+          <a href="" rel="noopener noreferrer" class="text-gray-500 ml-1" target="_blank">@ShoeMart</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a href="" class="text-gray-400">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="" class="ml-3 text-gray-400">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="" class="ml-3 text-gray-400">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" class="ml-3 text-gray-400">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
