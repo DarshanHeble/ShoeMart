@@ -38,7 +38,7 @@
     <section id="Home" class="p-4 pt-24 text-gray-400  body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div
-                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                class="lg:flex-grow md:w-80 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <h1 class="title-font text-4xl md:text-6xl mb-4 text-black font-bold">
                     Shoes for every Occasion
                     <!-- <br class="hidden lg:inline-block" />readymade gluten -->
@@ -61,7 +61,7 @@
                     </button>
                 </div>
             </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div class="lg:max-w-lg lg:w-full md:w-80 w-5/6">
                 <img class="object-cover object-center rounded" alt="hero"
                     src="https://source.unsplash.com/720x600/?Sneakers,Boots,shoes-" />
             </div>
@@ -75,11 +75,11 @@
             <div class="flex flex-wrap -m-4">
 
                 <!-- product1 -->
-                <button onclick="d1.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d1.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce"
                             class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
-                            src="images/shoe11.jpg">
+                            src="images/Boots/boots/img (5).jpg">
                     </a>
                     <div class="mt-4 text-left">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
@@ -99,7 +99,7 @@
                     </div>
                 </button>
 
-                <dialog id="d1" class="w-1/2">
+                <dialog id="d1" class="w-80">
                     <button onclick="d1.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -162,23 +162,38 @@
                                                 to Cart &nbsp;<i class="fa-solid fa-bag-shopping"></i></button>
                                         </div>
                                     </div>
-                                    <div class="img flex justify-center">
-                                        <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-                                            src="https://dummyimage.com/400x400">
+                                    <div class="img flex flex-col items-center lg:flex-row lg:justify-center">
+                                        <div class="imgScroll w-[26rem] h-72 overflow-auto">
+                                            <a id="img1" class="w-80"><img alt="ecommerce"
+                                                    class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                                    src="images/Boots/boots/img (5).jpg"> </a>
+                                            <div id="img2"> <img alt="ecommerce"
+                                                    class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                                    src="images/Boots/boots/img (1).jpg"> </div>
+                                            <div id="img3"><img alt="ecommerce"
+                                                    class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                                    src="images/Boots/boots/img (2).jpg"> </div>
+                                            <div id="img4"><img alt="ecommerce"
+                                                    class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                                    src="images/Boots/boots/img (3).jpg"> </div>
+                                            <div id="img5"> <img alt="ecommerce"
+                                                    class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                                    src="images/Boots/boots/img (4).jpg"> </div>
+                                        </div>
+
                                         <div class="flex flex-col ml-20 space-y-3">
-                                            <button><img src="https://dummyimage.com/400x400" alt="image2"
+                                            <a href="#img1"><img src="images/Boots/boots/img (1).jpg" alt="image2"
                                                     class="w-16 h-16">
-                                            </button>
-                                            <button><img src="https://dummyimage.com/400x400" alt="image3"
+                                            </a>
+                                            <a href="#img2"><img src="images/Boots/boots/img (2).jpg" alt="image3"
                                                     class="w-16 h-16">
-                                            </button>
-                                            <button><img src="https://dummyimage.com/400x400" alt="image4"
+                                            </a>
+                                            <a href="#img3"><img src="images/Boots/boots/img (3).jpg" alt="image4"
                                                     class="w-16 h-16">
-                                            </button>
-                                            <button><img src="https://dummyimage.com/400x400" alt="image5"
+                                            </a>
+                                            <a href="#img4"><img src="images/Boots/boots/img (4).jpg" alt="image5"
                                                     class="w-16 h-16">
-                                            </button>
+                                            </a>
                                         </div>
 
                                     </div>
@@ -190,10 +205,11 @@
                 </dialog>
 
                 <!-- product2 -->
-                <button onclick="d2.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d2.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-                            src="https://dummyimage.com/420x260">
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
+                            src="images/Boots/boots (2)/img (5).jpg">
                     </a>
                     <div class="mt-4 text-left">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
@@ -213,7 +229,7 @@
                     </div>
                 </button>
 
-                <dialog id="d2" class="w-1/2">
+                <dialog id="d2" class="w-80">
                     <button onclick="d2.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -278,7 +294,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -304,9 +320,10 @@
                 </dialog>
 
                 <!-- product3 -->
-                <button onclick="d3.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d3.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -327,7 +344,7 @@
                     </div>
                 </button>
 
-                <dialog id="d3" class="w-1/2">
+                <dialog id="d3" class="w-80">
                     <button onclick="d3.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -392,7 +409,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -418,9 +435,10 @@
                 </dialog>
 
                 <!-- product4 -->
-                <button onclick="d4.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d4.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -441,7 +459,7 @@
                     </div>
                 </button>
 
-                <dialog id="d4" class="w-1/2">
+                <dialog id="d4" class="w-80">
                     <button onclick="d4.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -506,7 +524,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -532,9 +550,10 @@
                 </dialog>
 
                 <!-- product5 -->
-                <button onclick="d5.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d5.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -555,7 +574,7 @@
                     </div>
                 </button>
 
-                <dialog id="d5" class="w-1/2">
+                <dialog id="d5" class="w-80">
                     <button onclick="d5.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -620,7 +639,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -646,9 +665,10 @@
                 </dialog>
 
                 <!-- product6 -->
-                <button onclick="d6.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d6.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -669,7 +689,7 @@
                     </div>
                 </button>
 
-                <dialog id="d6" class="w-1/2">
+                <dialog id="d6" class="w-80">
                     <button onclick="d6.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -734,7 +754,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -760,9 +780,10 @@
                 </dialog>
 
                 <!-- product7 -->
-                <button onclick="d7.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d7.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -783,7 +804,7 @@
                     </div>
                 </button>
 
-                <dialog id="d7" class="w-1/2">
+                <dialog id="d7" class="w-80">
                     <button onclick="d7.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -848,7 +869,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -874,9 +895,10 @@
                 </dialog>
 
                 <!-- product8 -->
-                <button onclick="d8.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d8.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -897,7 +919,7 @@
                     </div>
                 </button>
 
-                <dialog id="d8" class="w-1/2">
+                <dialog id="d8" class="w-80">
                     <button onclick="d8.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -962,7 +984,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -988,9 +1010,10 @@
                 </dialog>
 
                 <!-- product9 -->
-                <button onclick="d9.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d9.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -1011,7 +1034,7 @@
                     </div>
                 </button>
 
-                <dialog id="d9" class="w-1/2">
+                <dialog id="d9" class="w-80">
                     <button onclick="d9.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -1076,7 +1099,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -1102,9 +1125,10 @@
                 </dialog>
 
                 <!-- product10 -->
-                <button onclick="d10.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d10.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -1125,7 +1149,7 @@
                     </div>
                 </button>
 
-                <dialog id="d10" class="w-1/2">
+                <dialog id="d10" class="w-80">
                     <button onclick="d10.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -1190,7 +1214,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -1216,9 +1240,10 @@
                 </dialog>
 
                 <!-- product11 -->
-                <button onclick="d11.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d11.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -1239,7 +1264,7 @@
                     </div>
                 </button>
 
-                <dialog id="d11" class="w-1/2">
+                <dialog id="d11" class="w-80">
                     <button onclick="d11.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -1304,7 +1329,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -1330,9 +1355,10 @@
                 </dialog>
 
                 <!-- product12 -->
-                <button onclick="d12.showModal()" class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <button onclick="d12.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        <img alt="ecommerce"
+                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
                             src="https://dummyimage.com/420x260">
                     </a>
                     <div class="mt-4 text-left">
@@ -1353,7 +1379,7 @@
                     </div>
                 </button>
 
-                <dialog id="d12" class="w-1/2">
+                <dialog id="d12" class="w-80">
                     <button onclick="d12.close()" class="sticky top-2 left-[43rem] h-8">
                         <i class="fa-solid fa-x text-xl hover:text-2xl"></i></button>
 
@@ -1418,7 +1444,7 @@
                                     </div>
                                     <div class="img flex justify-center">
                                         <img alt="ecommerce"
-                                            class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                            class="lg:w-80 w-full lg:h-auto h-64 object-cover object-center rounded"
                                             src="https://dummyimage.com/400x400">
                                         <div class="flex flex-col ml-20 space-y-3">
                                             <button><img src="https://dummyimage.com/400x400" alt="image2"
@@ -1461,7 +1487,7 @@
                 <p class="mt-2 text-sm text-gray-300">Get our latest high quality and less prize shoes here</p>
             </div>
 
-            <!-- lg:w-1/4 md:w-1/2 -->
+            <!-- lg:w-1/4 md:w-80 -->
             <div class="  px-4">
                 <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Useful Links</h2>
                 <nav class="list-none mb-10">
