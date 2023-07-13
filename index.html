@@ -14,10 +14,13 @@
 
 <body class="bg-slate-100">
     <!-- header  -->
-    <header class="pl-4 pr-4 w-full bg-slate-100/[0.9] text-gray-700 body-font sticky top-0 z-20">
+    <header
+        class="container mx-auto pl-0 pr-0 md:pl-4 md:pr-4 bg-slate-100/[0.9] text-gray-700 body-font sticky top-0 z-20">
         <div class="container mx-auto flex flex-wrap p-5 items-center justify-between">
-            <i class="fa-solid fa-bars text-[2.2rem] md:hidden"></i>
-            <a class="flex title-font font-medium items-center text-gray-700 ">
+            <i class="fa-solid fa-bars text-[2.2rem] cursor-pointer md:hidden"></i>
+            <i class="fa-solid fa-xmark text-[2.9rem] cursor-pointer hidden"></i>
+
+            <a href="#Home" class="flex title-font font-medium items-center text-gray-700 ">
                 <img class="w-16" src="images/shoelogo.png">
                 <span class="text-3xl -ml-2"> Shoe Mart</span>
             </a>
@@ -28,7 +31,7 @@
                 <a href="Contact.html" target="_parent" class="mr-5 hover:text-red-500">Contact</a>
                 <a href="Account.html" target="_parent" class="mr-5 hover:text-red-500">Account</a>
             </nav>
-            <div class="bag text-[2.2rem] cursor-pointer">
+            <div class="bag text-[2.4rem] cursor-pointer">
                 <i class="cart fa-solid fa-bag-shopping hover:text-red-500"></i>
                 <span class=" hover:text-red-500" id=""></span>
             </div>
@@ -36,7 +39,8 @@
         </div>
     </header>
 
-    <div class="bg-slate-100/[0.9] flex flex-col items-start justify-center sticky top-24 z-10 md:hidden ">
+    <div
+        class="homeMenu h-0 bg-slate-100/[0.9] flex flex-col items-start justify-center overflow-hidden sticky top-24 z-10 md:hidden transition-all">
         <a href="#Home" class="ml-10 hover:text-red-500">Home</a>
         <a href="Products.html" target="_parent" class="ml-10 hover:text-red-500">Products</a>
         <a href="About.html" target="_parent" class="ml-10 hover:text-red-500">About</a>
@@ -46,7 +50,7 @@
 
     <!-- =============================================================================================== -->
     <!-- home   -->
-    <section id="Home" class="p-4 text-gray-400 body-font">
+    <section id="Home" class="md:p-4 text-gray-400 body-font">
         <div class="container mx-auto flex px-5 md:py-20 md:flex-row flex-col-reverse items-center">
             <div
                 class="lg:flex-grow md:w-80 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -65,10 +69,10 @@
                     pair of shoes for your next adventure!
                 </p>
                 <div class="flex justify-center">
-                    <button
+                    <a href="#productsIntro"
                         class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">
                         Explore Now
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full mb-10 md:mb-auto md:w-80 w-5/6">
@@ -79,23 +83,23 @@
     </section>
 
     <!-- =============================================================================================== -->
-    <!-- products  -->
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
+    <!-- products Intro  -->
+    <section id="productsIntro" class="text-gray-600 body-font">
+        <div class="container px-5 md:py-24 mx-auto">
             <div class="flex flex-wrap -m-4">
 
                 <!-- product1 -->
-                <button onclick="d1.showModal()" class="lg:w-1/4 md:w-80 p-4 w-full">
-                    <a class="block relative h-72 rounded overflow-hidden">
+                <button onclick="d1.showModal()" class="lg:w-1/4 md:w-80 p-4 w-1/2 h-1/2">
+                    <a class="block relative h-auto rounded overflow-hidden">
                         <img alt="ecommerce"
-                            class="object-cover object-center w-full h-full block hover:scale-[1.2] transition"
+                            class="object-cover object-center md:w-full md:h-full block hover:scale-[1.2] transition"
                             src="images/Boots/boots/img (1).jpg">
                     </a>
                     <div class="mt-4 text-left">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
                             MEN SHOES
                         </h3>
-                        <h2 class=" title-font text-lg font-medium">
+                        <h2 class=" title-font md:text-lg text-base font-medium">
                             Men's Nexon-03 Sports Running,Walking,Gym Shoes with Max..
                         </h2>
                         <p><i class="fa-solid fa-star"></i>
@@ -226,7 +230,7 @@
     </section>
     <!-- =============================================================================================== -->
     <!-- footer  -->
-    <footer class="bg-zinc-800 body-font">
+    <footer class=" w-full bg-zinc-800 body-font">
         <div
             class="container px-5 py-20 mx-auto flex justify-evenly md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -242,17 +246,13 @@
             <div class="  px-4">
                 <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Useful Links</h2>
                 <nav class="list-none mb-10">
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Home</a>
+                    <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a>
                     </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Products</a>
+                    <li><a href="Products.html" class="text-gray-400 hover:text-white">Products</a>
                     </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">Features</a>
+                    <li><a href="About.html" class="text-gray-400 hover:text-white">Features</a>
                     </li>
-                    <li>
-                        <a class="text-gray-400 hover:text-white">About</a>
+                    <li><a href="Contact.html" class="text-gray-400 hover:text-white">About</a>
                     </li>
                 </nav>
             </div>
@@ -264,20 +264,20 @@
                 <p class="text-white">Download App For Andriod and IOS Mobile Phones</p>
                 <div class="flex space-x-3">
                     <!-- Andriod  -->
-                    <a href="" class="flex justify-evenly items-center bg-white rounded w-40">
-                        <i class="fa-brands fa-google-play text-4xl text-black"></i>
+                    <a class="flex justify-evenly items-center bg-white rounded w-1/2 md:w-40">
+                        <i class="fa-brands fa-google-play text-3xl md:text-4xl text-black"></i>
                         <div class=" flex flex-col justify-center">
-                            <p class="text-black">Get It On</p>
-                            <h1 class=" text-xl text-black font-bold">Google Play</h1>
+                            <p class=" text-black">Get It On</p>
+                            <h1 class=" md:text-xl text-black font-bold">Google Play</h1>
                         </div>
                     </a>
 
                     <!-- Apple  -->
-                    <a href="" class="flex justify-evenly items-center bg-white rounded w-40">
-                        <i class="fa-brands fa-apple text-4xl text-black"></i>
+                    <a class="flex justify-evenly items-center bg-white rounded w-1/2 md:w-40">
+                        <i class="fa-brands fa-apple text-3xl md:text-4xl text-black"></i>
                         <div class=" flex flex-col justify-center">
                             <p class="text-black">Get It On</p>
-                            <h1 class=" text-xl text-black font-bold">Google Play</h1>
+                            <h1 class=" md:text-xl text-black font-bold">Google Play</h1>
                         </div>
                     </a>
                 </div>
