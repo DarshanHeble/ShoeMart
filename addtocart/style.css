@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+.cart {
+    text-decoration: none;
+    color: black;
+}
+
 .cart span {
     font-size: xx-large;
 }
@@ -34,4 +39,18 @@ i {
 
 .products .p a:hover {
     background-color: rgb(255, 209, 2);
+}
+
+
+/* Cart page  */
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addToCartDetails {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
 }

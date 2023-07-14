@@ -2,19 +2,20 @@ const carts = document.querySelectorAll('.addToCart');
 
 let products = [
     {
-        name: "Pink Shoe",
+        name: "/images/Boots/boots/img (1).jpg",
+        // name: "Pink Shoe",
         tag: "pinkshoe",
         price: 300,
         incart: 0
     },
     {
-        name: "Brown Shoe",
+        name: "/images/Boots/boots (2)/img (1).jpg",
         tag: "binkshoe",
         price: 200,
         incart: 0
     },
     {
-        name: "black Shoe",
+        name: "/images/Boots/boots (3)/img (1).jpg",
         tag: "blackshoe",
         price: 100,
         incart: 0
@@ -86,4 +87,24 @@ function totalCost(products) {
     }
 }
 
+function displayCart() {
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    let productsContainer = document.querySelector(".products")
+
+    if (cartItems && productsContainer) {
+        productsContainer.innerHTML = "";
+        Object.values(cartItems).map(item => {
+            productsContainer.innerHTML += `
+            <div class="product">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="${item.name}" alt="1" height="200px">
+                <span>Pink Shoe</span>
+            </div>`
+        })
+    }
+
+}
+
+displayCart()
 onLoadCartNumber()
